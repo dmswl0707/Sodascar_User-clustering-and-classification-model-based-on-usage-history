@@ -18,7 +18,7 @@
 
 ## `작업 개요`
 
-![framework](https://user-images.githubusercontent.com/79245556/149143424-379e2669-3843-4085-ac0f-3c1648e7fa8c.png)
+![framework](https://user-images.githubusercontent.com/79245556/149320808-1aa76dda-c985-4330-a49e-f44ffdbe2b8f.png)
 
 ### [STEP1.] ‘쏘카 이용정보’ 전처리 및 변수 가공
 
@@ -190,7 +190,7 @@
 💡 `유형이 분류된 user (이용이력 5회 이상)는 전체 user 수에 8% 가량에 불과하지만, 전체 이용횟수의 36%가량을 차지하므로 유형세분화를 기반으로 타게팅 전략을 수립하는 것이 비즈니스적으로 유의미할 것임`
 
 
-## `[STEP4.] user 유형 예측 모델 생성 및 검증`
+## `[STEP4.] user 유형 분류 모델 생성 및 검증`
 - **클러스터링을 통해 얻은 네개의 군집**을 **정답 레이블**로 하여 각 **user의 5회 이용이력**만을 바탕으로 user변수를 생성하여 user들의 유형을 분류하는 모델을 생성함  
 - 군집 분류를 위해 사용한 6개의 컬럼을 feature로 사용하였으며, user_type의 분류를 타겟으로 함  
 - 비교를 위해 **full record**(각 user의 모든 이용이력), **5 record**(앞선 5회의 이용이력)으로 생성한 user 변수를 input data로 한 모델을 비교하였음
